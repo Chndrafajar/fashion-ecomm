@@ -1,0 +1,66 @@
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .authItem {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #0002;
+
+    form {
+      .title {
+        h4 {
+          text-transform: lowercase;
+          font-weight: 600;
+          margin-bottom: 20px;
+          font-size: 26px;
+        }
+      }
+      .formItem {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+        input {
+          border: 1px solid #0002;
+          padding: 5px 10px;
+          outline-color: orange;
+        }
+      }
+      .forgot-password {
+        margin-bottom: 15px;
+        color: orange;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .authBtn {
+        width: 100%;
+        padding: 5px 0px;
+        border: none;
+        background-color: orange;
+        font-weight: 600;
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      .createLogin {
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        font-weight: 500;
+        a {
+          color: orange;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .auth {
+    padding: 0px 20px;
+  }
+}

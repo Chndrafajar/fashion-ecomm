@@ -1,0 +1,187 @@
+.navbar {
+  border: 1px solid #0001;
+  .container {
+    .item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        font-size: 22px;
+        font-weight: 500;
+        color: #000;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+
+      button {
+        background-color: orange;
+        padding: 3px 15px;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.user {
+  margin-top: 100px;
+}
+
+.col-md-8,
+.col-md-4 {
+  padding: 0px 20px;
+}
+
+.list-group {
+  margin-bottom: 20px;
+  list-style: none;
+  border-radius: 0;
+  border: 1px solid #0001;
+
+  .list-group-item {
+    border: none;
+    margin-bottom: 10px;
+  }
+  .list-group-item:hover {
+    background-color: orange;
+    color: #fff;
+  }
+  .list-group-item.active {
+    background-color: orange;
+    font-weight: 500;
+  }
+}
+
+.userProfile {
+  .info {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    h5 {
+      width: 75px;
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+    h6 {
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+    span {
+      font-size: 18px;
+    }
+  }
+  .userProfileItem {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #0002;
+
+    form {
+      .title {
+        h4 {
+          text-transform: lowercase;
+          font-weight: 600;
+          margin-bottom: 20px;
+          font-size: 26px;
+        }
+      }
+      .formItem {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+        input {
+          border: 1px solid #0002;
+          padding: 5px 10px;
+          outline-color: orange;
+        }
+      }
+      .forgot-password {
+        margin-bottom: 15px;
+        color: orange;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .authBtn {
+        width: 100%;
+        padding: 5px 0px;
+        border: none;
+        background-color: orange;
+        font-weight: 600;
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      .createLogin {
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        font-weight: 500;
+        a {
+          color: orange;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.table-orders {
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    height: 0px;
+  }
+}
+
+.addProduct {
+  .form {
+    margin-bottom: 50px;
+    button {
+      padding: 8px 0px;
+      // background-color: orange;
+      color: #fff;
+      font-weight: 600;
+      width: 100%;
+      border: none;
+    }
+
+    .formItem {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 20px;
+
+      input {
+        padding: 5px 15px;
+        outline-color: orange;
+      }
+
+      textarea {
+        padding: 5px 15px;
+        outline-color: orange;
+      }
+
+      .btnImg {
+        padding: 8px 0px;
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(186, 186, 186);
+        margin-top: 10px;
+      }
+    }
+    .option {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .userProfile .userProfileItem {
+    width: auto;
+  }
+}
