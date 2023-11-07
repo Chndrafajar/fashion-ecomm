@@ -310,9 +310,9 @@
   margin-bottom: 50px;
   .container {
     .row {
-      .col-md-8 {
+      .col-lg-8 {
         .cartItem {
-          width: 80%;
+          width: 100%;
           height: auto;
           display: flex;
           margin-bottom: 20px;
@@ -326,7 +326,7 @@
             justify-content: center;
             height: auto;
             img {
-              width: 70%;
+              width: 80%;
             }
           }
           .iconX {
@@ -642,4 +642,14 @@ footer {
 }
 
 @media only screen and (max-width: 568px) {
+  .cart-page .container .row .col-lg-8 .cartItem {
+    .info {
+      p {
+        font-size: 12px;
+      }
+    }
+    .imgItem img {
+      width: 95%;
+    }
+  }
 }

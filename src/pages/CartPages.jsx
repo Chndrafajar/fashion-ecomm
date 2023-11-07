@@ -83,7 +83,7 @@ const CartPages = () => {
       <div className="cart-page">
         <div className="container">
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-lg-8">
               {cart?.map((p) => (
                 <>
                   <div className="cartItem" key={p?._id}>
@@ -106,7 +106,7 @@ const CartPages = () => {
                 </>
               ))}
             </div>
-            <div className="col-md-4">
+            <div className="col-lg-4">
               <div className="card shadow p-4 border-0">
                 <div className="checkout">
                   <span className="total">Total: {totalPrice()}</span>
