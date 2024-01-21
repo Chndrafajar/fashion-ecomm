@@ -16,11 +16,13 @@ import ProductCategory from './pages/ProductCategory';
 import SearchProduct from './pages/SearchProduct';
 import DetailPages from './pages/DetailPages';
 import CartPages from './pages/CartPages';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePages />} />
+      <Route path="*" element={<NotFound />} />
       <Route path="/cart" element={<CartPages />} />
       <Route path="/p/:slug" element={<ProductCategory />} />
       <Route path="/search" element={<SearchProduct />} />

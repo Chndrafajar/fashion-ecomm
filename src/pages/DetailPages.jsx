@@ -69,7 +69,7 @@ const DetailPages = () => {
                     swal('Good Job!', 'Item added to cart', 'success');
                   }}
                 >
-                  Buy Product
+                  Add Product To Cart
                 </button>
                 <div className="category">
                   <span>
